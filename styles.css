@@ -22,17 +22,52 @@ img {
     margin: 15px;
 }
 
+.relative-position {
+    position: relative;
+    left: 25px;
+    bottom: 25px;
+    z-index: 1;
+}
+
+.fixed-position {
+    position: fixed;
+    top: 0px;
+    left: 25px;
+}
+
+.sticky-position {
+    position: sticky;
+    top: 20px;
+    left: 0px;
+}
+
 .ancestor {
     height: 200px;
     border: 2px solid black;
+    position: relative;
 }
 
 .child {
     width: 150px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
 }
 
 .row {
     margin-bottom: 150px;
+    height: 50vh;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.row img {
+    /* width: 300px; */
+    height: 25vh;
 }
 
 .overflow-section {
@@ -44,4 +79,18 @@ img {
     width: 150px;
     border: 2px solid black;
     margin: 0 auto;
+    margin-bottom: 70px;
+    overflow-y: auto;
+    overflow-x: scroll;
+    box-shadow: 0px 0px 5px 5px red;
 }
+
+.column {
+    height: 75vh;
+    border: 2px solid black ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
