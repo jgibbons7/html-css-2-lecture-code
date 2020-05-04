@@ -1,0 +1,47 @@
+body {
+    text-align: center;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+img {
+    width: 250px;
+}
+
+.relative-position, .fixed-position, .absolute-position, .sticky-position {
+    width: 250px;
+    border: 2px solid black;
+    margin: 15px;
+}
+
+.ancestor {
+    height: 200px;
+    border: 2px solid black;
+}
+
+.child {
+    width: 150px;
+}
+
+.row {
+    margin-bottom: 150px;
+}
+
+.overflow-section {
+    margin-top: 150px;
+}
+
+.overflow-box {
+    height: 150px;
+    width: 150px;
+    border: 2px solid black;
+    margin: 0 auto;
+}
